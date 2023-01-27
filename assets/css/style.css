@@ -1,6 +1,8 @@
+/* Importando fontes */
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap');
 
+/* Resetando o CSS */
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +12,15 @@
     overflow-x: hidden;
 }
 
+/* Estilizando o fundo da page */
 body {
     background-image: url(../img/fundo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #080808;
 }
 
+/* Início da estilização a class menu */
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +43,10 @@ body {
 .menu-item:hover {
     cursor: pointer;
 }
+/* Final da estilização da class menu */
 
+
+/* Início da estilização da class sinopse */
 .sinopse {
     display: flex;
     flex-direction: column;
@@ -68,7 +76,10 @@ body {
     font-family: 'Sofia Sans', sans-serif;
     font-size: 1.5em;
 }
+/* Final da estilização da class sinopse */
 
+
+/* Início da responsividade para celular */
 @media screen and (max-width: 480px) {
     body {
         background-color: #080808;
@@ -121,7 +132,9 @@ body {
         font-size: 1.5em;
     }
 }
+/* Final da responsividade para celular */
 
+/* Início da responsividade para tablet */
 @media screen and (min-width: 481px) and (max-width:1050px) {
     body {
         background-color: #080808;
@@ -160,9 +173,4 @@ body {
         font-size: 1.5em;
     }
 }
-
-@media screen and (min-width: 1051px) and (max-width:1200px) {
-    body {
-        background-color: #080808;
-    }
-}
+/* Final da responsividade para tablet */
