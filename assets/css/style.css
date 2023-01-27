@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url(../img/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 35px;
+    position: absolute;
+    top: 280px;
+}
+
+.menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    width: 50px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+.sinopse {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: azure;
+    align-items: center;
+    text-align: left;
+    top: 18vh;
+    left: 10vw;
+    width: 30%;
+}
+
+.titulo-sinopse {
+    font-family: 'Special Elite', cursive;
+    font-size: 4em;
+    padding-bottom: 40px;
+    max-width: 200px;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+}
+
+.responsivo {
+    display: none;
+}
+
+.paragrafo-sinopse {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 1.8em;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #080808;
+        background-image: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        top: 2vh;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu-item {
+        width: 60px;
+    }
+
+    .sinopse {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        top: 15vh;
+        left: 5vw;
+    }
+
+    .titulo-sinopse {
+        font-family: 'Special Elite', cursive;
+        font-size: 4em;
+        padding-bottom: 40px;
+        max-width: 200px;
+        text-transform: uppercase;
+        letter-spacing: -3px;
+        position: absolute;
+        left: 0px;
+    }
+
+    .responsivo {
+        display: block;
+        width: 90%;
+        margin-bottom: 60px;
+    }
+
+    .paragrafo-sinopse {
+        font-family: 'Sofia Sans', sans-serif;
+        margin-right: 2vw;
+        font-size: 1.5em;
+    }
+}
